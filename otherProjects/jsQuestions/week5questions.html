@@ -59,12 +59,11 @@
                 <div class="row">
                     <div class="col-md-12">
 
-                        <pre>
+            <pre>
+            
        for(var i = 0; i < 7; i++){
   console.log('#');
 }
-          
-
                 </pre>
                     </div>
                     <!-- put a button here; the id corresponds to a jQuery click event -->
@@ -82,26 +81,18 @@
             <div role="tabpanel" class="tab-pane" id="Q2">
                 <div class="row">
                     <div class="col-md-12">
-
-                        <pre>function printFooBar() {
-var print = "";
-var number = Number(1);
-for (i = Number(1); i <= 100; i++) {
-if (i % 3 == 0 && i % 5 == 0) {
-print = print + "FooBar" + "<br/>";
-} else if (i % 3 == 0) {
-print = print + "Foo" + "<br/>";
-} else if (i % 5 == 0) {
-print = print + "Bar " + "<br/>";
-} else {
-print = print + i +"<br/>";
+                        <pre>
+                       for(var i = 1; i <= 100; i+=1){
+if(i % 3 === 0){ //if i is evenly divisible by 3
+  console.log('Foo');
+}
+else if(i % 5 === 0){ //if i is evenly divisible by 5
+  console.log('Bar');
+}
+else { //if not print out the number
+  console.log(i);
 }
 }
-$("‪#‎q2result‬").html(print);
-$("‪#‎q2button‬").on("click", function() {
-printFooBar();
-});
-});
                 </pre>
                     </div>
                     <div class="col-md-12">
@@ -120,7 +111,25 @@ printFooBar();
                 <div class="row">
                     <div class="col-md-12">
                         <pre>
-        write answer right now 
+  var size = 8;
+var line = '';
+var i = 0;
+ 
+for(i = 0; i < size / 2; i++){
+  line = line + '# ';
+}
+ 
+for(i = 0; i < size; i ++){
+  if(i % 2 === 0){ //if i is an even row then add a space
+    console.log(' ' + line);
+  }
+  else{
+    console.log(line);
+  }
+}
+
+
+
         </pre>
                     </div>
                     <!-- put a button here; the id corresponds to a jQuery click event -->
@@ -261,27 +270,15 @@ printFooBar();
         <!-- end tab-content-->
 
         <script>
-            $(document).ready(function () {
-                    //code for Q1
-                    function doQuestion1() {
-                        var arr = [23, 46, 34, 76],
-                            total = 0;
-                        //go through each item in the array
-                        for (var i = 0; i < arr.length; i++) {
-                            //add to the total
-                            total += arr[i];
-                        }
-                        //display the answer on the screen by replacing the html of #answerQuestion1 with total
-                        $("#answerQuestion1").html(total);
-                    }
-
-                    function doQuestion2() {}
-                    //when user clicks this button, call doQuestion1
+            
+                    
                     $("#question1").on("click", function () {
-                        $("#answerQuestion1").html("answer one");
+                        $("#answerQuestion1").html(for(var i = 0; i < 7; i++){
+  console.log('#');
+});
                     })
                     $("#question2").on("click", function () {
-                        $("#answerQuestion2").html("answer two");
+                        $("#answerQuestion2").html();
                     })
                     $("#question3").on("click", function () {
                         $("#answerQuestion3").html("answer three");
