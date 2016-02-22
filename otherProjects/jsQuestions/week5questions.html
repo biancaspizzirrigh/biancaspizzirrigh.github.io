@@ -50,263 +50,265 @@
             <li role="presentation"><a href="#Q9" aria-controls="Q9" role="tab" data-toggle="tab">Q9</a></li>
         </ul>
 
-         <!-- Tab panes -->
-    <div class="tab-content">
+        <!-- Tab panes -->
+        <div class="tab-content">
 
-      <!-- question 1 -->
-      <div role="tabpanel" class="tab-pane active" id="Q1">
-        <!--use a bootstrap rwo-->
-        <div class="row">
-          <div class="col-md-12">
-           
-            <pre>
-            //this function adds up the values of an array and
-            //displays it to the screen
-            //
-            function doQuestion1() {
-            var arr = [23, 46, 34, 76],
-                total = 0;
+            <!-- question 1 -->
+            <div role="tabpanel" class="tab-pane active" id="Q1">
+                <!--use a bootstrap rwo-->
+                <div class="row">
+                    <div class="col-md-12">
 
-            //for each value in the array
-            for (var i = 0; i < arr.length; i++) {
-                //add to the total
-                total += arr[i];
+                        <pre>
+       for(var i = 0; i < 7; i++){
+  console.log('#');
+}
+          
 
-            }
-            //write the total to the results div
-            $("#answerQuestion1").html(total);
-
-            }
-
-            //user clicks button
-            $("#question1").on("click", function() {
-              doQuestion1();
-            })
                 </pre>
-          </div>
-          <!-- put a button here; the id corresponds to a jQuery click event -->
-          <div class="col-md-12">
-            <button id="question1" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <!--put a div to dump the function output-->
-          <div class="col-md-12">
-            <div id="answerQuestion1"></div>
-          </div>
+                    </div>
+                    <!-- put a button here; the id corresponds to a jQuery click event -->
+                    <div class="col-md-12">
+                        <button id="question1" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <!--put a div to dump the function output-->
+                    <div class="col-md-12">
+                        <div id="answerQuestion1"></div>
+                    </div>
 
-        </div>
-      </div>
-      <!-- question 2 -->
-      <div role="tabpanel" class="tab-pane" id="Q2">
-        <div class="row">
-          <div class="col-md-12">
-            <pre>//will put code here
+                </div>
+            </div>
+            <!-- question 2 -->
+            <div role="tabpanel" class="tab-pane" id="Q2">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <pre>function printFooBar() {
+var print = "";
+var number = Number(1);
+for (i = Number(1); i <= 100; i++) {
+if (i % 3 == 0 && i % 5 == 0) {
+print = print + "FooBar" + "<br/>";
+} else if (i % 3 == 0) {
+print = print + "Foo" + "<br/>";
+} else if (i % 5 == 0) {
+print = print + "Bar " + "<br/>";
+} else {
+print = print + i +"<br/>";
+}
+}
+$("‪#‎q2result‬").html(print);
+$("‪#‎q2button‬").on("click", function() {
+printFooBar();
+});
+});
                 </pre>
-          </div>
-          <div class="col-md-12">
-            <button id="question2" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <div class="col-md-12">
-            <div id="answerQuestion2"></div>
-          </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button id="question2" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <div class="col-md-12">
+                        <div id="answerQuestion2"></div>
+                    </div>
 
-        </div>
+                </div>
 
-      </div>
-    <!-- question 3 -->
-      <div role="tabpanel" class="tab-pane" id="Q3">
-        <!--use a bootstrap rwo-->
-        <div class="row">
-          <div class="col-md-12">
-            <pre>
+            </div>
+            <!-- question 3 -->
+            <div role="tabpanel" class="tab-pane" id="Q3">
+                <!--use a bootstrap rwo-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
         write answer right now 
         </pre>
-          </div>
-          <!-- put a button here; the id corresponds to a jQuery click event -->
-          <div class="col-md-12">
-            <button id="question3" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <!--put a div to dump the function output-->
-          <div class="col-md-12">
-            <div id="answerQuestion3"></div>
-          </div>
+                    </div>
+                    <!-- put a button here; the id corresponds to a jQuery click event -->
+                    <div class="col-md-12">
+                        <button id="question3" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <!--put a div to dump the function output-->
+                    <div class="col-md-12">
+                        <div id="answerQuestion3"></div>
+                    </div>
 
-        </div>
-      </div>
-         <!-- question 4 -->
-      <div role="tabpanel" class="tab-pane" id="Q4">
-        <!--use a bootstrap rwo-->
-        <div class="row">
-          <div class="col-md-12">
-            <pre>
+                </div>
+            </div>
+            <!-- question 4 -->
+            <div role="tabpanel" class="tab-pane" id="Q4">
+                <!--use a bootstrap rwo-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
         write answer Q4
         </pre>
-          </div>
-          <!-- put a button here; the id corresponds to a jQuery click event -->
-          <div class="col-md-12">
-            <button id="question4" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <!--put a div to dump the function output-->
-          <div class="col-md-12">
-            <div id="answerQuestion4"></div>
-          </div>
+                    </div>
+                    <!-- put a button here; the id corresponds to a jQuery click event -->
+                    <div class="col-md-12">
+                        <button id="question4" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <!--put a div to dump the function output-->
+                    <div class="col-md-12">
+                        <div id="answerQuestion4"></div>
+                    </div>
 
-        </div>
-      </div>
-         <!-- question 5 -->
-      <div role="tabpanel" class="tab-pane" id="Q5">
-        <!--use a bootstrap rwo-->
-        <div class="row">
-          <div class="col-md-12">
-            <pre>
+                </div>
+            </div>
+            <!-- question 5 -->
+            <div role="tabpanel" class="tab-pane" id="Q5">
+                <!--use a bootstrap rwo-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
         write answer Q5
         </pre>
-          </div>
-          <!-- put a button here; the id corresponds to a jQuery click event -->
-          <div class="col-md-12">
-            <button id="question5" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <!--put a div to dump the function output-->
-          <div class="col-md-12">
-            <div id="answerQuestion5"></div>
-          </div>
+                    </div>
+                    <!-- put a button here; the id corresponds to a jQuery click event -->
+                    <div class="col-md-12">
+                        <button id="question5" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <!--put a div to dump the function output-->
+                    <div class="col-md-12">
+                        <div id="answerQuestion5"></div>
+                    </div>
 
-        </div>
-      </div>
-         <!-- question 6 -->
-      <div role="tabpanel" class="tab-pane" id="Q6">
-        <!--use a bootstrap rwo-->
-        <div class="row">
-          <div class="col-md-12">
-            <pre>
+                </div>
+            </div>
+            <!-- question 6 -->
+            <div role="tabpanel" class="tab-pane" id="Q6">
+                <!--use a bootstrap rwo-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
         write answer Q6
         </pre>
-          </div>
-          <!-- put a button here; the id corresponds to a jQuery click event -->
-          <div class="col-md-12">
-            <button id="question6" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <!--put a div to dump the function output-->
-          <div class="col-md-12">
-            <div id="answerQuestion6"></div>
-          </div>
+                    </div>
+                    <!-- put a button here; the id corresponds to a jQuery click event -->
+                    <div class="col-md-12">
+                        <button id="question6" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <!--put a div to dump the function output-->
+                    <div class="col-md-12">
+                        <div id="answerQuestion6"></div>
+                    </div>
 
-        </div>
-      </div>
-         <!-- question 7 -->
-      <div role="tabpanel" class="tab-pane" id="Q7">
-        <!--use a bootstrap rwo-->
-        <div class="row">
-          <div class="col-md-12">
-            <pre>
+                </div>
+            </div>
+            <!-- question 7 -->
+            <div role="tabpanel" class="tab-pane" id="Q7">
+                <!--use a bootstrap rwo-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
         write answer Q7
         </pre>
-          </div>
-          <!-- put a button here; the id corresponds to a jQuery click event -->
-          <div class="col-md-12">
-            <button id="question7" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <!--put a div to dump the function output-->
-          <div class="col-md-12">
-            <div id="answerQuestion7"></div>
-          </div>
+                    </div>
+                    <!-- put a button here; the id corresponds to a jQuery click event -->
+                    <div class="col-md-12">
+                        <button id="question7" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <!--put a div to dump the function output-->
+                    <div class="col-md-12">
+                        <div id="answerQuestion7"></div>
+                    </div>
 
-        </div>
-      </div>
-         <!-- question 8 -->
-      <div role="tabpanel" class="tab-pane" id="Q8">
-        <!--use a bootstrap rwo-->
-        <div class="row">
-          <div class="col-md-12">
-            <pre>
+                </div>
+            </div>
+            <!-- question 8 -->
+            <div role="tabpanel" class="tab-pane" id="Q8">
+                <!--use a bootstrap rwo-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
         write answer Q8
         </pre>
-          </div>
-          <!-- put a button here; the id corresponds to a jQuery click event -->
-          <div class="col-md-12">
-            <button id="question8" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <!--put a div to dump the function output-->
-          <div class="col-md-12">
-            <div id="answerQuestion8"></div>
-          </div>
+                    </div>
+                    <!-- put a button here; the id corresponds to a jQuery click event -->
+                    <div class="col-md-12">
+                        <button id="question8" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <!--put a div to dump the function output-->
+                    <div class="col-md-12">
+                        <div id="answerQuestion8"></div>
+                    </div>
 
-        </div>
-      </div>
-         <!-- question 9 -->
-      <div role="tabpanel" class="tab-pane" id="Q9">
-        <!--use a bootstrap rwo-->
-        <div class="row">
-          <div class="col-md-12">
-            <pre>
+                </div>
+            </div>
+            <!-- question 9 -->
+            <div role="tabpanel" class="tab-pane" id="Q9">
+                <!--use a bootstrap rwo-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre>
         write answer for Q 9
         </pre>
-          </div>
-          <!-- put a button here; the id corresponds to a jQuery click event -->
-          <div class="col-md-12">
-            <button id="question9" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <!--put a div to dump the function output-->
-          <div class="col-md-12">
-            <div id="answerQuestion9"></div>
-          </div>
+                    </div>
+                    <!-- put a button here; the id corresponds to a jQuery click event -->
+                    <div class="col-md-12">
+                        <button id="question9" class="btn btn-default" type="submit">Run Code</button>
+                    </div>
+                    <!--put a div to dump the function output-->
+                    <div class="col-md-12">
+                        <div id="answerQuestion9"></div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
-      </div>
-         
-      </div>
-         
 
-    <!-- end tab-content-->
 
-  <script>
-           $(document).ready(function() {
-      //code for Q1
-      function doQuestion1() {
-        var arr = [23, 46, 34, 76],
-          total = 0;
-        //go through each item in the array
-        for (var i = 0; i < arr.length; i++) {
-          //add to the total
-          total += arr[i];
-        }
-        //display the answer on the screen by replacing the html of #answerQuestion1 with total
-        $("#answerQuestion1").html(total);
-      }
-      function doQuestion2() {
-      }
-      //when user clicks this button, call doQuestion1
-      $("#question1").on("click", function() {
-       $("#answerQuestion1").html("answer one");
-      })
-       $("#question2").on("click", function() {
-       $("#answerQuestion2").html("answer two");
-      })
-        $("#question3").on("click", function() {
-       $("#answerQuestion3").html("answer three");
-      })
-         $("#question4").on("click", function() {
-       $("#answerQuestion4").html("answer four");
-      })
-          $("#question5").on("click", function() {
-       $("#answerQuestion5").html("answer five");
-      })
-           $("#question6").on("click", function() {
-       $("#answerQuestion6").html("answer six");
-      })
-            $("#question7").on("click", function() {
-       $("#answerQuestion7").html("answer seven");
-      })
-             $("#question8").on("click", function() {
-       $("#answerQuestion8").html("answer eight");
-      })
-              $("#question9").on("click", function() {
-       $("#answerQuestion9").html("answer nine");
-      })
-        
-      
-    })//end ready
-  </script>
-  </script>
+        <!-- end tab-content-->
+
+        <script>
+            $(document).ready(function () {
+                    //code for Q1
+                    function doQuestion1() {
+                        var arr = [23, 46, 34, 76],
+                            total = 0;
+                        //go through each item in the array
+                        for (var i = 0; i < arr.length; i++) {
+                            //add to the total
+                            total += arr[i];
+                        }
+                        //display the answer on the screen by replacing the html of #answerQuestion1 with total
+                        $("#answerQuestion1").html(total);
+                    }
+
+                    function doQuestion2() {}
+                    //when user clicks this button, call doQuestion1
+                    $("#question1").on("click", function () {
+                        $("#answerQuestion1").html("answer one");
+                    })
+                    $("#question2").on("click", function () {
+                        $("#answerQuestion2").html("answer two");
+                    })
+                    $("#question3").on("click", function () {
+                        $("#answerQuestion3").html("answer three");
+                    })
+                    $("#question4").on("click", function () {
+                        $("#answerQuestion4").html("answer four");
+                    })
+                    $("#question5").on("click", function () {
+                        $("#answerQuestion5").html("answer five");
+                    })
+                    $("#question6").on("click", function () {
+                        $("#answerQuestion6").html("answer six");
+                    })
+                    $("#question7").on("click", function () {
+                        $("#answerQuestion7").html("answer seven");
+                    })
+                    $("#question8").on("click", function () {
+                        $("#answerQuestion8").html("answer eight");
+                    })
+                    $("#question9").on("click", function () {
+                        $("#answerQuestion9").html("answer nine");
+                    })
+
+
+                }) //end ready
+        </script>
+        </script>
 </body>
 
 </html>
