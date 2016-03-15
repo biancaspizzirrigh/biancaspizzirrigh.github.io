@@ -1,10 +1,10 @@
 $(document).ready(function() {
   /*
   click - done
-  focus -
-  blur -
-  change -
-  ouseenter & mouseleave -
+  focus - done
+  blur - done
+  change - done
+  ouseenter & mouseleave - done
   */
 
   $("#mySingleLineText").on("focus", function() {
