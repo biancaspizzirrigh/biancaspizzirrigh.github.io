@@ -1,0 +1,34 @@
+{
+	"products" : [
+		{
+			"prodname" : "Product1",
+			"prodprice" : "$20",
+			"prodimgurl" : "img/gallery/g1.jpg"
+		},
+		{
+			"prodname" : "Product2",
+			"prodprice" : "$25",
+			"prodimgurl" : "img/gallery/g2.jpg"
+		},
+		{
+			"prodname" : "Product3",
+			"prodprice" : "$30",
+			"prodimgurl" : "img/gallery/g3.jpg"
+		},
+		{
+			"prodname" : "Product4",
+			"prodprice" : "$18",
+			"prodimgurl" : "img/gallery/g4.jpg"
+		},
+		{
+			"prodname" : "Product5",
+			"prodprice" : "$23",
+			"prodimgurl" : "img/gallery/g5.jpg"
+		},
+		{
+			"prodname" : "Product6",
+			"prodprice" : "$28",
+			"prodimgurl" : "img/gallery/g6.jpg"
+		}		
+	]
+}
